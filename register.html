@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+    <link rel="stylesheet" href="static/signup.css" />
+  </head>
+  <!--<m>
+    <div class="class flex" style="flex-direction: row    
+    ;">
+            <img src="image1.png" alt="">-->
+        <body>
+            <div class="main">
+            
+            <input type="checkbox" id="chk" aria-hidden="true" />
+            <div class="signup">
+                <form action="/register" method="post">
+                <label for="chk" id="reg" name="reg" aria-hidden="true"
+                    >Sign up</label>
+                <input type="text"  name="username"   placeholder="Username" required="">
+                  
+            
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    required=""
+                />
+                <input
+                    type="password"
+                    id="confirmation"
+                    name="confirmation"
+                    placeholder="Confirmation"
+                    required=""
+                />
+                <div class="mb-3">
+                    <!-- <label for="acc_type">Select your Account Type :</label> -->
+                    <select name="acc_type" id="acc_type">
+                    <option disable selected> Select Account Type</option> 
+                    <option value="patient">Patient</option>
+                 
+                      
+                    <option value="doctor">Doctor</option>
+                    </select>
+                </div>
+                <button>Sign up</button>
+                <a class="secondary flex"
+                    >Already have account? <i class="fa-solid fa-arrow-down"></i
+                ></a>
+                </form>
+            </div>
+            <div class="signin">
+                <form   action="/login" method="post">
+                <label for="chk" aria-hidden="true">Sign In</label>
+                <!-- <input type="email" name="email"  placeholder="Email" required=""> -->
+                <input
+                    id="username"
+                    type="text"
+                    name="username"
+                    placeholder="Username"
+                    required=""
+                />
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    required=""
+                />
+                <div class="mb-3">
+                    <!-- <label for="acc_type">Select your Account Type :</label> -->
+                    <select name="acc_type" id="acc_type">
+                    <option disable selected> Select Account Type</option> 
+                    <option value="patient">Patient</option>
+                    
+                    <option value="doctor">Doctor</option>
+                    <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <button>Sign In</button>
+
+                <a href="">Forget password?</a>
+                </form>
+            </div>
+            </div>
+            <script
+            src="https://kit.fontawesome.com/8263f3c691.js"
+            crossorigin="anonymous"
+            ></script>
+            <!--<script>
+                let signupBtn=document.getElementById("signinBtn");
+                signupBtn.onclick=function(){
+                    signinBtn.style.maxHeight="0";
+                }
+            </script>    -->
+        </body>
+    </div> 
+
+    </m>
+</html>

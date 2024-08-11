@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="static/approve.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="static/logofinal.png">
+      </a>
+      <nav class="nav-items">
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Issue/Request</a>
+        <div class="loginbutton">
+          <button>
+            <a href="/admindashboard">Dashboard</a>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <div class="main-container shift container-fluid py-5 text-center">
+      <h1>Approve</h1>
+      <br>
+      <div class="table-responsive">
+        <table class="border container p-5 table table-hover">
+          <thead>
+            <tr>
+              <th>User ID
+              <th>Username
+              <th>Contact Number
+                <th>Gender
+                <th>Speciality
+                <th>Registeration Number
+           
+              <th>ID Link
+              <th>Verification
+              <th>Change
+          <tbody>{% for i in accounts %} <tr>
+              <td>{{ i.id }}
+              <td>{{ i.name }}
+              <td>{{ i.contact }}
+                <td>{{ i.gender }}
+              <td>{{ i.speciality }}
+                
+              <td>{{ i.regno }}
+            
+              <td>
+                <a href="{{ i.idlink }}">VIEW</a>
+              <td>{{ i.is_verified }}
+                <td>
+                <a href="/approveupdate?doctor_id={{ i.id }}">Change</a>
+            </tr>{% endfor %}
+        </table>
+        <div></div>
+       
+  </body>
+</html>

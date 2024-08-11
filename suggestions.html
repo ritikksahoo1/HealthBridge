@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html</title>
+</head>
+<body>
+    
+      <h1><b>Select your Health Issue</b></h1>
+      <form action="/suggestions" method="post">
+      <div class="mb-3">
+        <!-- <label for="acc_type">Select your Account Type :</label> -->
+        <select name="issue" id="issue">
+        <option disable selected> Select</option> 
+        <option value="Hypothyroidism",id="Hypothyroidism">Hypothyroidism</option>
+        <option value="Diabetes",id="Diabetes">Diabetes</option>
+        <option value="Hypertension",id="Hypertension">Hypertension</option>
+        <option value="Migraine",id="Migraine">Migraine</option>
+        <option value="Arthritis",id="Arthritis">Arthritis</option>
+        <option value="Acne",id="Acne", name="Acne">Acne</option>
+        <option value="Dengue",id="Dengue">Dengue</option>
+        </select>
+      </div>
+      <button type="submit" class="btn-btn-primary">Submit</button>
+    </form>
+</body>
+</html>

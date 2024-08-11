@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="static/display_medicine.css" rel="stylesheet">
+        <title>Medicine Details</title>
+    </head>
+    <body>
+        <nav>
+            <div class="container flex main-nav">
+                <a href="#" class="company-logo img"><img src="static/logofinal.png" alt="company-logo"></a>
+                <div class="nav-links">
+                    <ul class="flex">
+                        <li><a href="homepage.html"class="hover-link">Homepage </a></li>
+                        <li><a href="/patientdashboard" class="hover-link">Dashboard </a></li>
+                        <li><a href="about-us.html"class="hover-link">About Us <i class="fa-sharp fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#"class="hover-link secondary-button">Sign In</a></li>
+                        <li><a href="#"class="hover-link primary-button">Sign Up</a></li>
+                      </ul>
+                </div>
+            </div>
+          </nav>
+        
+            <div class="section">
+<div class="header">
+    <h2>MEDICINE DETAILS</h2>
+
+</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>MEDICINE</th>
+                            <th>DATE</th>
+                          
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                        {% for i in list %}
+                            <tr>
+                                <td>{{i[0]}}</td>
+                                <td>{{today}}</td>
+
+                               
+                        {% endfor %}
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
