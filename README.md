@@ -1,6 +1,6 @@
 # HealthBridge - EHR System
 
-HealthBridge is a web-based Electronic Health Record (EHR) system that utilizes Optical Character Recognition (OCR) and AI/ML technology to extract medicine names from uploaded prescriptions. The system also provides medication suggestions based on patient medical reports. It aims to assist healthcare providers in making informed decisions by leveraging patient history, ultimately leading to better care outcomes.
+HealthBridge is a web-based Electronic Health Record (EHR) system that leverages Optical Character Recognition (OCR) and AI/ML technology to identify medicine names from uploaded prescriptions. Additionally, it offers medication recommendations based on patient medical reports. This system aims to support healthcare providers in making informed decisions by utilizing patient history, ultimately enhancing care outcomes.
 
 ## Technologies Used
 
@@ -15,11 +15,11 @@ HealthBridge is a web-based Electronic Health Record (EHR) system that utilizes 
 
 ## Features
 
-1. Prescription Upload: Users can upload prescription images or scanned documents.
-2. OCR Extraction: The system employs PyTesseract and OpenCV to extract medicine names from prescriptions.
-3. Medical Report Analysis: Patient medical reports are analyzed to provide relevant medication suggestions.
-4. Data Management: The system uses Pandas for efficient data manipulation and storage.
-5. User-friendly Interface: The website offers an intuitive and responsive user interface for easy navigation and interaction.
+1. Prescription Upload: Users can upload images or scanned documents of prescriptions.
+2. OCR Extraction: Utilizes PyTesseract and OpenCV to extract medicine names from prescriptions.
+3. Medical Report Analysis: Analyzes patient medical reports to provide relevant medication suggestions.
+4. Data Management: Employs Pandas for efficient data manipulation and storage.
+5. User-friendly Interface: Offers an intuitive and responsive interface for easy navigation and interaction.
 
 
 Snippets
